@@ -105,6 +105,76 @@ nav a:focus {
 
 /* MAIN */
 
+/* hero */
+.hero {
+    padding: 3rem 1.5rem;
+    align-items: start;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.hero-box {
+    border: var(--border);
+    padding: 1.5rem;
+    position: relative;
+}
+
+/* win 95 style */
+.hero-box::before {
+    content: attr(data-title);
+    display: block;
+    background: linear-gradient(90deg, #000080, #1084d0);
+    color: var(--white);
+    font-family: 'Press Start 2P', monospace;
+    font-size: 8px;
+    padding: 8px 8px;
+    margin: -1.5rem -1.5rem 1.25rem -1.5rem;
+    letter-spacing: 0.05em;
+}
+
+.hero-box h1 {
+    font-family: 'VT323', monospace;
+    font-size: clamp(2.2rem, 5vw, 3.5rem);
+    line-height: 1.1;
+    color: var(--yellow);
+    margin-bottom: 1rem;
+}
+
+.hero-box p {
+    font-size: 15px;
+    color: var(--white);
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+}
+
+.btn-stock {
+    display: inline-block;
+    background: var(--yellow);
+    color: var(--black);
+    font-family: 'Press Start 2P', monospace;
+    font-size: 10px;
+    padding: 14px 20px;
+    text-decoration: none;
+    border: 3px solid var(--black);
+    box-shadow: 4px 4px 0 var(--white);
+    transition: transform 0.1s, box-shadow 0.1s;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.btn-stock:hover {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0 var(--white);
+}
+
+.btn-stock:focus {
+    outline: 3px solid var(--cyan);
+    outline-offset: 4px;
+}
+
+
+
 .divider {
     text-align: center;
     padding: 0.75rem;
