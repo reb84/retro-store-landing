@@ -1,0 +1,102 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --black: #0a0a0a;
+    --white: #f0ead6;
+    --yellow: #ffe600;
+    --cyan: #00ffff;
+    --magenta: #ff00cc;
+    --green: #00ff41;
+    --red: #ff2222;
+    --grey: #2a2a2a;
+    --border: 3px solid var(--white);
+}
+
+/* tiled background */
+body {
+    background-color: var(--black);
+    background-image:
+        repeating-linear-gradient(0deg, transparent, transparent 31px, rgba(255, 255, 255, 0.03) 31px, rgba(255, 255, 255, 0.03) 32px),
+        repeating-linear-gradient(90deg, transparent, transparent 31px, rgba(255, 255, 255, 0.03) 31px, rgba(255, 255, 255, 0.03) 32px);
+    color: var(--white);
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 16px;
+    line-height: 1.6;
+    cursor: crosshair;
+}
+
+/* header */
+header {
+    border-bottom: var(--border);
+    padding: 1rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.site-logo {
+    font-family: 'Press Start 2P', monospace;
+    font-size: clamp(1.4rem, 5vw, 2.8rem);
+    color: var(--cyan);
+    text-shadow: 4px 4px 0 var(--magenta), -2px -2px 0 var(--yellow);
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    line-height: 1.4;
+}
+
+.tagline {
+    font-family: 'VT323', monospace;
+    font-size: 1.3rem;
+    color: var(--green);
+    letter-spacing: 0.1em;
+}
+
+/* Visitor counter */
+.visitor-counter {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 9px;
+    color: var(--yellow);
+    border: 2px solid var(--yellow);
+    padding: 4px 10px;
+    margin-top: 4px;
+}
+
+/* nav */
+nav {
+    border-bottom: var(--border);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav a {
+    display: block;
+    padding: 10px 20px;
+    font-family: 'Press Start 2P', monospace;
+    font-size: 9px;
+    color: var(--white);
+    text-decoration: none;
+    border-right: 2px solid var(--grey);
+    transition: background 0.1s, color 0.1s;
+}
+
+nav a:hover,
+nav a:focus {
+    background: var(--yellow);
+    color: var(--black);
+    outline: none;
+}
