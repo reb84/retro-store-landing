@@ -44,6 +44,15 @@ header {
     overflow: hidden;
 }
 
+/* scanlines */
+header::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0, 0, 0, 0.15) 2px, rgba(0, 0, 0, 0.15) 4px);
+    pointer-events: none;
+}
+
 .site-logo {
     font-family: 'Press Start 2P', monospace;
     font-size: clamp(1.4rem, 5vw, 2.8rem);
@@ -53,6 +62,35 @@ header {
     display: block;
     text-align: center;
     line-height: 1.4;
+}
+
+.site-logo {
+    animation: glitch 4s infinite;
+}
+
+@keyframes glitch {
+
+    0%,
+    95%,
+    100% {
+        text-shadow: 4px 4px 0 var(--magenta), -2px -2px 0 var(--yellow);
+        transform: translate(0);
+    }
+
+    96% {
+        text-shadow: -4px 4px 0 var(--magenta), 2px -2px 0 var(--yellow);
+        transform: translate(2px, -1px);
+    }
+
+    97% {
+        text-shadow: 4px -4px 0 var(--cyan), -2px 2px 0 var(--yellow);
+        transform: translate(-2px, 1px);
+    }
+
+    98% {
+        text-shadow: 4px 4px 0 var(--magenta), -2px -2px 0 var(--yellow);
+        transform: translate(0);
+    }
 }
 
 .tagline {
