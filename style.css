@@ -31,6 +31,39 @@ body {
     cursor: crosshair;
 }
 
+
+/* marquee */
+.marquee-wrap {
+    background: var(--yellow);
+    color: var(--black);
+    padding: 6px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    border-bottom: 3px solid var(--black);
+}
+
+.marquee-banner {
+    display: inline-block;
+    animation: marquee 18s linear infinite;
+}
+
+.marquee-banner span {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 10px;
+    padding: 0 2rem;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-60%);
+    }
+}
+
+
 /* HEADER */
 
 header {
@@ -98,6 +131,7 @@ header::after {
     font-size: 1.3rem;
     color: var(--green);
     letter-spacing: 0.1em;
+    text-align: center;
 }
 
 /* Visitor counter */
@@ -132,6 +166,10 @@ nav a {
     text-decoration: none;
     border-right: 2px solid var(--grey);
     transition: background 0.1s, color 0.1s;
+}
+
+nav ul li:last-child a {
+    border-right: none;
 }
 
 nav a:hover,
@@ -494,4 +532,15 @@ footer address {
 
 .github-button:hover {
     color: var(--white);
+}
+
+
+
+@media (max-width: 640px) {
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
 }

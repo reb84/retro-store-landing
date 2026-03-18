@@ -1,16 +1,12 @@
 # STATIC ATTIC - Vintage Tech & Retro Collectibles
 
-A fictional landing page for a vintage tech and retro collectibles shop, built as a portfolio project. Leaning hard into that web 1.0 / Neocities nostalgia. All the chaos of the early internet, but with modern accessibility and SEO underneath.
+![Screenshot](assets/screenshot.png)
 
 ✨ [LIVE DEMO](https://reb84.github.io/retro-store-landing/)
 
----
-
-## About
-
 STATIC ATTIC is a single-page landing site for a fictional shop selling vintage game hardware, Y2K oddities, and forgotten tech. The design leans hard into late 90s / early 2000s web aesthetics: pixel fonts, marquee banners, scanline overlays, Windows 95-style title bars, and a visitor counter, all while keeping the underlying HTML semantic and accessible.
 
-A deliberately chaotic aesthetic without the inaccessible mess.
+All the chaos of the early internet, but with modern accessibility and SEO underneath.
 
 ---
 
