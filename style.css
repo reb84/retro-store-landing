@@ -313,3 +313,56 @@ nav a:focus {
     outline: 3px solid var(--yellow);
     outline-offset: 3px;
 }
+
+
+/* footer */
+footer {
+    border-top: var(--border);
+    padding: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-badges {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.badge {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 7px;
+    padding: 4px 8px;
+    border: 2px solid;
+    white-space: nowrap;
+}
+
+.badge-ie {
+    border-color: #1da;
+    color: #1da;
+}
+
+.badge-800 {
+    border-color: var(--yellow);
+    color: var(--yellow);
+}
+
+.badge-valid {
+    border-color: var(--cyan);
+    color: var(--cyan);
+}
+
+footer p {
+    font-size: 12px;
+    color: #666;
+}
+
+footer address {
+    font-style: normal;
+    font-size: 12px;
+    color: #666;
+    text-align: right;
+}
