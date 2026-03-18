@@ -249,3 +249,67 @@ nav a:focus {
     gap: 0.75rem;
     margin-top: auto;
 }
+
+
+/* guestbok */
+
+.guest-section {
+    margin: 0 auto 2rem;
+    border: 3px solid var(--magenta);
+    position: relative;
+    box-shadow: 3px 3px 0 var(--cyan);
+    width: 80%;
+    max-width: 900px;
+}
+
+.guest-section::before {
+    content: "SIGN OUR GUESTBOOK !!";
+    display: block;
+    background: var(--magenta);
+    color: var(--black);
+    font-family: 'Press Start 2P', monospace;
+    font-size: 9px;
+    padding: 6px 10px;
+}
+
+.guest-inner {
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.guest-inner p {
+    font-family: 'VT323', monospace;
+    font-size: 1.5rem;
+    color: var(--white);
+    max-width: 50ch;
+}
+
+.btn-guest {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 9px;
+    padding: 13px 18px;
+    border: 3px solid var(--magenta);
+    color: var(--magenta);
+    background: transparent;
+    text-decoration: none;
+    box-shadow: 3px 3px 0 var(--magenta);
+    transition: transform 0.3s, box-shadow 0.1s;
+    white-space: nowrap;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.btn-guest:hover {
+    transform: translate(2px, 2px);
+    box-shadow: 1px 1px 0 var(--magenta);
+}
+
+.btn-guest:focus {
+    outline: 3px solid var(--yellow);
+    outline-offset: 3px;
+}
